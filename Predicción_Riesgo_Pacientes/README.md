@@ -1,4 +1,5 @@
 # Proyecto: Predicción de Riesgo en Pacientes
+##### 🚀(leer el archivo "resultados" para ver las gráficas estadísticas y las conclusiones finales)
 
 ## 📌 Descripción del Dataset
 Este conjunto de datos contiene información de salud de **1000 pacientes reales**, cuidadosamente depurada y **anonimizada** para proteger la privacidad.  
