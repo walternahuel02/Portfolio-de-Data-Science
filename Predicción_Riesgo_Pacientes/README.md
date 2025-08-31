@@ -46,6 +46,7 @@ Este proyecto tiene un doble propósito:
 .
 ├── data/             # Dataset original (anonimizado)
 ├── scripts/          # Código en R para análisis y modelado
+├── imágenes/         # Recursos visuales
 ├── dashboard/        # Archivos del dashboard en Power BI
 └── README.md         # Descripción general del proyecto
 🚀 Próximos pasos
