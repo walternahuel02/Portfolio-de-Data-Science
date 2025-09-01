@@ -23,19 +23,21 @@ A continuación, se presenta el resumen del modelo :
 
 **Interpretación de coeficientes:**
 
-- **Si recibe oxígeno suplementario (coeficiente = 3,394)**
-  Si la respuesta es SÍ, el riesgo del paciente aumenta en promedio **3,394 puntos**.  
+| Variable | Coeficiente | Interpretación |
+|----------|------------|----------------|
+| **Si recibe oxígeno suplementario** | 3,394 | Si la respuesta es **SÍ**, el riesgo del paciente aumenta en promedio **3,394 puntos**. |
+| **Saturación de oxígeno (%)** | -1,138 | Relación negativa: a mayor saturación, menor riesgo. Un aumento de 1% en saturación reduce el riesgo en **1,138 puntos**, consistente con la medicina: más oxígeno disponible protege mejor los órganos. Menos oxígeno, perjudicial para los órganos vitales |
 
-- **Saturación de oxígeno (%) (coeficiente = -1,138):**  
-  Relación negativa: a mayor saturación, menor riesgo. Un aumento de 1% en saturación reduce el riesgo en **1,138 puntos**, consistente con la medicina: más oxígeno disponible, órganos más protegidos.  
 
 > ⚠️ Nota: Este análisis segmenta los cuatro estados de riesgo en cuatro cohortes de valores distinta, según:
 <img width="449" height="85" alt="image" src="https://github.com/user-attachments/assets/f22dc9f1-5f81-4987-8561-af902913fd80" />
 
-> -  menor de -6,23: Riesgo normal
-> - -6,23;5,919:     Riesgo bajo 
-> - 5,919;19,262:    Riesgo medio  
-> - mayor de 19,262: Riesgo alto
+| Puntaje estimado | Estado de riesgo |
+|-----------------|----------------|
+| < -6,23 | Normal |
+| -6,23 a 5,919 | Bajo |
+| 5,919 a 19,262 | Medio |
+| > 19,262 | Alto |
 
 ---
 
@@ -43,10 +45,12 @@ A continuación, se presenta el resumen del modelo :
 
 Se evaluó la **colinealidad** entre variables para detectar si algunas explican lo mismo:
 
-![VCORR](https://raw.githubusercontent.com/walternahuel02/Portfolio-de-Data-Science/refs/heads/main/Predicci%C3%B3n_Riesgo_Pacientes/im%C3%A1genes/correlaci%C3%B3n%20entre%20v.jpg)
+<img width="634" height="433" alt="image" src="https://github.com/user-attachments/assets/23adf87f-3090-4174-aad1-9b3fb5ee03e6" />
+
+
 
 - Las variables **latidos por minuto** y **respiración por minuto** tienen alta correlación (cercana a 0.7).  
-- Mantener ambas variables mejora el R² ajustado, aumentando la precisión del modelo.
+- No hay problema en mantener estas dos variables.
 
 ---
 
