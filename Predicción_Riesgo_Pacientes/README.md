@@ -1,6 +1,9 @@
 # Proyecto: Predicción de Riesgo en Pacientes
 ##### 🚀(leer el archivo "resultados" para ver las gráficas estadísticas y las conclusiones finales)
 
+<img width="935" height="526" alt="image" src="https://github.com/user-attachments/assets/0f950df7-9ab4-462e-b57f-c13781c9b7c3" />
+
+
 ## 📌 Descripción del Dataset
 Este conjunto de datos contiene información de salud de **1000 pacientes reales**, cuidadosamente depurada y **anonimizada** para proteger la privacidad.  
 Incluye constantes vitales y parámetros clínicos junto con su correspondiente **nivel de riesgo de salud** (Normal, Bajo, Medio, Alto).  
